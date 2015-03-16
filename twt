@@ -1,0 +1,7 @@
+#!/bin/bash
+# Create a new TEX file in /tmp/ and open it using texworks
+
+f=`mktemp`
+touch $f.tex
+texworks $f.tex
+

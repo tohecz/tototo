@@ -1,0 +1,11 @@
+#!/bin/bash
+# Opens acroread, but takes any of "file.", "file" and "file.pdf" as argument.
+# It's particularly useful for quickly opening the file
+
+f=$1
+f=${f%.}
+f=${f%.pdf}
+f=$f.pdf
+
+echo "acroread \"$f\" &"
+acroread "$f" &

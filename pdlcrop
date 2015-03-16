@@ -1,0 +1,11 @@
+#!/bin/bash
+# Tool for calling pdflatex and then cropping the result,
+# copying to HOME and converting to PNG
+
+pdflatex ${1%.tex}
+pdfcrop -margin 5 ${1%.tex}.pdf
+mv -v ${1%.tex}-crop.pdf ${1%.tex}.pdf
+cp -v ${1%.tex}.pdf ~/crop.pdf
+echo 'convert -density 240 ~/crop.pdf -resize "600>" ~/crop.png'
+convert -density 240 ~/crop.pdf -resize "600>" ~/crop.png
+
