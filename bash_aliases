@@ -30,7 +30,8 @@ alias sage='nice sage'
 alias vi='vimx'
 alias vim='vimx'
 
-# Vi's exit in bash
+# Vi's edit and quit in bash
+alias :e='vimx'
 alias :q='exit'
 
 # Various useless stuff
