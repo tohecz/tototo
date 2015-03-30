@@ -23,6 +23,9 @@ alias pdflatex='pdflatex -file-line-error'
 # Open current directory in the file browser
 alias CAJA='caja `pwd`'
 
+# Open current directory in a terminal (useful with Caja Terminal)
+alias TERM='mate-terminal'
+
 # Sage should be nice
 alias sage='nice sage'
 
